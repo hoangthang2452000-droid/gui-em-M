@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gửi em❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+  <div id="loader-container">
+    <div class="loader-content">
+      <div class="loader-heart"></div>
+      <div class="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+      <p id="progress-text">
+        Loading... <span id="progress-percent">0%</span>
+      </p>
+    </div>
+  </div>
+
+  <canvas id="bg"></canvas>
+
+  <audio id="backgroundMusic" loop>
+    <source src="./style/Ngàn Năm Ánh Sáng" type="audio/mpeg" />
+  </audio>
+
+  <div class="click-me-container">
+    <h2 id="clickMeText">NHẤN ĐỂ XEM</h2>
+  </div>
+
+  <div id="modalContainer" class="modal-container">
+    <div class="modal-content">
+      <span class="close-button">×</span>
+      <h1>Chào em, ….cô gái đặc biệt!</h1>
+      <div class="modal-body">
+        <div class="text-content">
+          <p id="typingText"></p>
+          <p class="signature" style="opacity: 0; transition: opacity 1s;">Người yêu em ❤️</p>
+        </div>
+        <div class="image-content" id="imageStack">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="lightboxModal" class="lightbox-modal">
+    <span class="lightbox-close">×</span>
+    <div class="lightbox-content">
+      <img id="lightboxImage" src="" alt="Zoomed memory">
+    </div>
+  </div>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.166.0/build/three.module.js"
+      }
+    }
+  </script>
+
+  <script type="module" src="./style/script.js"></script>
+</body>
+
+
+</html>
